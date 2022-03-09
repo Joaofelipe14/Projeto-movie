@@ -1,0 +1,5 @@
+package com.joaosuperior.dsmovie.config;
+
+public class SecurityConfing {
+
+}
