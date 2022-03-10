@@ -1,0 +1,9 @@
+package com.joaosuperior.dsmovie.respositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.joaosuperior.dsmovie.entities.Movie;
+
+public interface MovieRespository extends JpaRepository <Movie, Long> {
+
+}

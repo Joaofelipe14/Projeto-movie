@@ -1,0 +1,5 @@
+package com.joaosuperior.dsmovie.dto;
+
+public class MovieDTO {
+
+}

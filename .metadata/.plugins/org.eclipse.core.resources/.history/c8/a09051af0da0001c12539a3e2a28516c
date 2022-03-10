@@ -1,0 +1,21 @@
+package com.joaosuperior.dsmovie.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.joaosuperior.dsmovie.dto.MovieDTO;
+import com.joaosuperior.dsmovie.respositories.MovieRepository;
+
+@Service 
+public class MovieService {
+	
+	@Autowired 
+	private MovieRepository respository; 
+	
+	public List<MovieDTO>findAll(){
+		List<Movie>result = repository.findAll();
+	}
+
+}

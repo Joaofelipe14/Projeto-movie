@@ -1,0 +1,40 @@
+package com.joaosuperior.dsmovie.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.joaosuperior.dsmovie.dto.ScoreDTO;
+import com.joaosuperior.dsmovie.entities.Movie;
+import com.joaosuperior.dsmovie.entities.User;
+import com.joaosuperior.dsmovie.repositories.MovieRepository;
+import com.joaosuperior.dsmovie.repositories.ScoreRepository;
+import com.joaosuperior.dsmovie.repositories.UserRepository;
+
+@Service 
+public class ScoreService {
+	
+	@Autowired 
+	private MovieRepository movieRespository; 
+	
+	@Autowired 
+	private UserRepository userRespository; 
+	
+	@Autowired 
+	private ScoreRepository scoreRespository; 
+	
+	@Transactional
+	public void saveScore(ScoreDTO dto) {
+		User user = userRespository.findByEmail(dto.getEmail());
+		if(user == null) {
+			user = new User();
+			user.setEmail(dto.getEmail());
+			user = userRespository.saveAndFlush(user);
+		}
+		
+		Movie movie = movieRepository.findById(dto.getMovieId()).get()):
+	}
+	
+	
+	
+}

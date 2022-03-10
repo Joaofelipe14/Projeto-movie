@@ -1,0 +1,26 @@
+package com.joaosuperior.dsmovie.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.joaosuperior.dsmovie.dto.MovieDTO;
+import com.joaosuperior.dsmovie.entities.Movie;
+import com.joaosuperior.dsmovie.respositories.MovieRepository;
+
+@Service 
+public class MovieService {
+	
+	@Autowired 
+	private MovieRepository respository; 
+	
+	@Transactional
+	public Page<MovieDTO>findAll(Pageable pageable){
+		Page<Movie>result = respository.findAll(pageable);
+		Page<MovieDTO> page = result.map(x-> new MovieDTO(x));
+		return page;
+	}
+
+}

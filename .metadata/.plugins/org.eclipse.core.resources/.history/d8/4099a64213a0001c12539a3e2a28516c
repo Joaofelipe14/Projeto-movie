@@ -1,0 +1,14 @@
+package com.joaosuperior.dsmovie.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.joaosuperior.dsmovie.respositories.MovieRepository;
+
+@Service 
+public class ScoreService {
+	
+	@Autowired 
+	private MovieRepository respository; 
+	
+	
+}

@@ -1,0 +1,7 @@
+package com.joaosuperior.dsmovie.dto;
+
+public class ScoreDTO {
+	private Long movieId;
+	private String email;
+	private Double score;
+}

@@ -1,0 +1,5 @@
+package com.joaosuperior.dsmovie.respositories;
+
+public class ScoreRepository {
+
+}

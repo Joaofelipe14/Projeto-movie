@@ -1,0 +1,34 @@
+package com.joaosuperior.dsmovie.dto;
+
+import com.joaosuperior.dsmovie.entities.Movie;
+
+public class MovieDTO {
+	private Long id;
+	private String title;
+	private Double score;
+	private Integer count;
+	private String image;
+	
+	public MovieDTO() {
+		
+	}
+
+	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.score = score;
+		this.count = count;
+		this.image = image;
+	}
+	
+	public MovieDTO(Movie movie) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.score = score;
+		this.count = count;
+		this.image = image;
+	}
+	
+}

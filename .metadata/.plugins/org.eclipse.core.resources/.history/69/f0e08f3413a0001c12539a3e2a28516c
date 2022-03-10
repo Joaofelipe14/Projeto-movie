@@ -1,0 +1,5 @@
+package com.joaosuperior.dsmovie.services;
+
+public class ScoreService {
+
+}
