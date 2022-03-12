@@ -2,7 +2,6 @@ import {ReactComponent as StarFull} from 'assets/img/start-full.svg';
 import {ReactComponent as StarHalf} from 'assets/img/start-half.svg';
 import {ReactComponent as StarEmpty} from 'assets/img/start-empty.svg';
 import './styles.css';
-import { type } from '@testing-library/user-event/dist/type';
 
 
 type Props={
